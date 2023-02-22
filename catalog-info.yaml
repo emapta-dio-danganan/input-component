@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: EMAPTA North Star Input Components
+  title: Input Components v1
+  description: EMAPTA North Star Input Components with Documentation
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: service
+  owner: guests
+  lifecycle: experimental
