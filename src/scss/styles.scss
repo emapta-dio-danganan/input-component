@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700|Roboto:400,400i,700&display=swap");
+@import 'foundation/normalize';
+@import 'foundation/colors';
+@import 'foundation/settings';
+@import 'foundation/mixins';
+@import 'foundation/typography';
+@import 'elements/thumb';
+@import 'elements/popover';
+@import 'components/calendar';
+@import 'library/file';
+@import 'library/currency';
+@import 'library/datepicker';
+@import 'library/dateTimePicker';
+@import 'library/hoursmins';
+@import 'library/input';
+@import 'library/radio';
+@import 'library/select';
+@import 'library/switch-toggle';
+@import 'library/textarea';
+@import 'library/toggle';
+@import 'library/checkbox';
+@import 'library/selectWithProfile';
+@import 'library/selectWithLink';
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+

@@ -1,0 +1,84 @@
+h1, h2, h3, h4, h5, h6{
+    margin: 0 0 1rem;
+    color: $gray-dark;
+    font-family: 'Quicksand', sans-serif;
+  
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+  
+  h1{
+    font-size: 2.25rem;
+  
+    @include md{
+      font-size: 2.625rem;
+    }
+  }
+  
+  h2{
+    font-size: 1.875rem;
+  
+    @include md{
+      font-size: 2.25rem;
+    }
+  }
+  
+  h3{
+    font-size: 1.5rem;
+  
+    @include md{
+      font-size: 1.875rem;
+    }
+  }
+  
+  h4{
+    font-size: 1.25rem;
+  
+    @include md{
+      font-size: 1.5rem;
+    }
+  }
+  
+  h5{
+    font-size: 1rem;
+  
+    @include md{
+      font-size: 1.25rem;
+    }
+  }
+  
+  h6{
+    font-size: 0.875rem;
+  }
+  
+  label{
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: $gray-light3;
+    text-transform: capitalize;
+    display: inline-block;
+    margin: 0 0 0.25rem;
+  }
+  
+  p{
+    color: $gray-dark;
+    line-height: 1.5;
+    margin: 0 0 1rem;
+  
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+  
+  a{
+    color: $green-dark;
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-decoration: none;
+    transition: $transition;
+  
+    &:hover{
+      color: $green-dark1;
+    }
+  }

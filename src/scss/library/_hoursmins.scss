@@ -1,0 +1,27 @@
+.em-input-hoursmins {
+    .em-input {
+        display: flex;
+
+        span {
+            font-size: 20px;
+            font-weight: 700;
+            color: $gray-light3;
+            display: block;
+            margin: 15px 5px;
+        }
+    }
+
+    .em-input-field {
+        display: flex;
+
+        span {
+            font-size: 20px;
+            font-weight: 700;
+            color: $gray-light3;
+            display: block;
+            margin: 15px 5px;
+        }
+    }
+}
+
+

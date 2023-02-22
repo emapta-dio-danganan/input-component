@@ -1,0 +1,4 @@
+public
+src
+dist/main/tsconfig.json
+dist/main/tsconfig.common.json

@@ -1,0 +1,31 @@
+.em-input-currency {
+    position: relative;
+
+    .em-input-label {
+        span {
+            display: inline-block;
+            left: 0;
+        }
+    }
+
+    span {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        font-size: $text-sm;
+        font-weight: $font-bold;
+        top: 50px;
+        left: 15px;
+        color: $gray-light3;
+        z-index: 5;
+    }
+
+    .em-input-field {
+        .em-input {
+            input {
+                padding: 10px 15px 10px 50px;
+            }
+        }
+    }
+}
+

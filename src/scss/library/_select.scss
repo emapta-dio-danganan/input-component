@@ -1,0 +1,184 @@
+.em-select {
+    position: relative;
+    width: 100%;
+
+    .em-input-field {
+        width: 100%;
+    }    
+
+    .em-input-field .em-select-input,
+    .em-popover .em-select-search input {
+        min-height: 50px;
+        width: 100%;
+        background-color: $blue-light;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        box-shadow: inset 0 -2px 0 0 $blue-light1;
+        border: none;
+        font-size: 0.875rem;
+        color: #4A5568;
+        padding: 10px 15px;
+        margin-bottom: 15px;
+        resize: none;
+        transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+
+        &:focus {
+            background-color: $blue-light;
+            color: #4A5568;
+            border: none;
+            outline: none;
+            box-shadow: inset 0 -2px 0 0 $blue-light4;
+        }
+    }
+
+    .em-field-icon {
+        position: absolute;
+        top: 35px;
+        right: 15px;
+        cursor: pointer;
+    }
+
+    .em-noresult {
+        padding: 20px;
+    }
+}
+
+.is-invalid .em-select .em-input-field .select-input {
+    box-shadow: 0 2px 0 0 $red;
+}
+
+.em-overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.em-popover {
+    position: absolute;
+    top: 93px;
+    width: 100%;
+    margin-top: -16px;
+    background-color: $white;
+    font-size: .875rem;
+    color: $gray-dark;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: 5px solid $blue;
+    z-index: 100;
+    box-shadow: 0px 15px 30px 0px rgba(19, 37, 154, 0.15);
+
+    .em-select-popover {
+        width: 100%;
+        background-color: $white;
+        max-height: 300px;
+        overflow: auto;
+
+        .em-select-search {
+            padding: 20px;
+
+            input {
+                margin-bottom: 0;
+            }
+        }
+
+        .em-select-multiple {
+            padding: 0 20px 20px;
+        }
+
+        option, .em-checklist-item {
+            font-size: .875rem;
+            color: $gray-dark;
+            text-transform: none;
+            white-space: normal;
+            line-height: 1.5;
+            padding: 20px;
+            transition: all .5s cubic-bezier(.19,1,.22,1);
+            cursor: pointer;
+
+            &:hover {
+                background-color: $blue-light;
+                padding: 20px 18px 20px 22px;
+            }
+        }
+
+        optgroup {
+            padding: 20px 20px 0;
+        }
+
+        .em-select-checklist {
+            optgroup {
+                padding: 20px 0 10px;
+            }
+        }
+    }
+
+    .em-select-check {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition: all .5s cubic-bezier(.19,1,.22,1);
+
+        input {
+            width: auto;
+            box-shadow: 0 0 0;
+            height: 15px;
+            width: 15px;
+            margin: 15px;
+            visibility: hidden;
+            position: absolute;
+        }
+
+        input:checked + label {
+            background: url('https://storage.googleapis.com/empower-production-assets/images/icons/icon-check-white-sm.svg') center no-repeat;
+            background-color: $blue-light4;
+            border-color: $blue-light4;
+            z-index: 100;
+        }
+
+        label {
+            background-image: none;
+            background-position: center;
+            border: 2px solid $blue-light2;
+            border-radius: 5px;
+            height: 20px;
+            width: 20px;
+            margin: 15px;
+            flex: none;
+            cursor: pointer;
+
+            &:hover {    
+                border-color: $blue-light4;
+            }
+        }
+    }
+}
+
+/* scroll */
+.em-select-popover {
+  scrollbar-width: thin;
+  scrollbar-color: $gray;
+}
+
+.em-select-popover::-webkit-scrollbar-track{
+    background: $gray-light;
+}
+
+.em-select-popover::-webkit-scrollbar-thumb{
+    background-color: $gray-light2;
+    border-radius: 20px;
+    border: 3px solid $gray-light;
+    cursor: pointer;
+}
+
+.em-select-popover::-webkit-scrollbar{
+    width: 12px;
+    cursor: pointer;
+}
+
+
+

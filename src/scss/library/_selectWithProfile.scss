@@ -1,0 +1,62 @@
+.em-selectwithprofile {
+    .em-popover {
+        top: 70px;
+    }
+}
+
+.em-select-profile {    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.em-profile-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+} 
+
+.em-profile-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h6 {
+        color: $gray-dark;
+        font-family: Roboto,sans-serif;
+        font-weight: $font-bold;
+        line-height: 1.5;
+        text-transform: capitalize;
+    }
+
+    span {
+        color: $gray-light4;
+        font-size: $text-sm;
+        line-height: 20px;
+        font-weight: $font-regular;
+    }
+}
+
+
+.em-btn-delete {
+    color: $red;
+    box-shadow: inset 0 0 0 1px $red;
+    padding: 15px;
+    background-color: transparent;
+    border-radius: $border-radius-md;
+    border: none;
+    height: 50px;
+    width: 50px;
+
+    &:hover {
+        background-color: $red;
+        transition: $transition;
+
+        svg {
+            path {
+                fill: $white;
+            }
+        }
+    }
+}

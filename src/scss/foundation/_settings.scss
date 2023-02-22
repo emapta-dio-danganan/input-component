@@ -1,0 +1,36 @@
+// Breakpoints
+$screen-xs-min: 400px; // Small smartphones
+$screen-sm-min: 576px; // Small tablets and large smartphones (landscape view)
+$screen-md-min: 768px; // Small tablets (portrait view)
+$screen-lg-min: 992px; // Tablets and small desktopsw
+$screen-xl-min: 1200px; // Large tablets and desktops
+$screen-xxl-min: 1500px; // Large tablets and desktops
+
+// Container max width
+$container-width: 1024px;
+
+// Transition easing
+$transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+
+// Shadow
+$shadow-card: 0px 10px 20px 0px rgba(19, 37, 154, 0.05);
+$shadow-popover: 0px 15px 30px 0px rgba(19, 37, 154, 0.15);
+$shadow-modal: 0 30px 60px rgba(0,0,0,0.2);
+
+// Border Radius
+$border-radius-sm: 5px;
+$border-radius-md: 10px;
+$border-radius-lg: 20px;
+
+// Grid
+$grid-margin: -7.5px;
+$grid-gutter: 7.5px;
+
+// Typography
+$font-body: "Roboto", sans-serif;
+$font-heading: "Quicksand", sans-serif;
+$font-regular: 400;
+$font-bold: 700;
+$text-lg: 2rem;
+$text-base: 1rem;
+$text-sm: 0.875rem;

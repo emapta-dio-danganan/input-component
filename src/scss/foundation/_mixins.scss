@@ -1,0 +1,42 @@
+// Breakpoint: Smaller devices
+@mixin xs {
+    @media (min-width: #{$screen-xs-min}) {
+        @content;
+    }
+  }
+  
+  // Breakpoint: Small devices
+  @mixin sm {
+     @media (min-width: #{$screen-sm-min}) {
+         @content;
+     }
+  }
+  
+  // Breakpoint: Medium devices
+  @mixin md {
+     @media (min-width: #{$screen-md-min}) {
+         @content;
+     }
+  }
+  
+  // Breakpoint: Large devices
+  @mixin lg {
+     @media (min-width: #{$screen-lg-min}) {
+         @content;
+     }
+  }
+  
+  // Breakpoint: Extra large devices
+  @mixin xl {
+     @media (min-width: #{$screen-xl-min}) {
+         @content;
+     }
+  }
+  
+  // Breakpoint: Extra large devices
+  @mixin xxl {
+     @media (min-width: #{$screen-xxl-min}) {
+         @content;
+     }
+  }
+  
